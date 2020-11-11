@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <title>在机场</title>
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- 阿里巴巴图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1449567_4c1bmnk5mg2.css" />
+    <!-- promise库 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bluebird@3.7.2/js/browser/bluebird.min.js"></script> -->
+
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> -->
+    <!-- <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script> -->
+    <!-- <script src="pdf.worker.min.js"></script> -->
+
+    <script type="text/javascript">
+        var userAgent = navigator.userAgent;
+        if (userAgent.indexOf('AlipayClient') > -1) {
+            // 支付宝小程序的 JS-SDK 防止 404 需要动态加载，如果不需要兼容支付宝小程序，则无需引用此 JS 文件。
+            document.writeln('<script src="https://appx/web-view.min.js"' + '>' + '<' + '/' + 'script>');
+        } else if (/miniProgram/i.test(userAgent)) {
+            // 微信小程序 JS-SDK 如果不需要兼容微信小程序，则无需引用此 JS 文件。
+            document.write('<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"><\/script>');
+        }
+    </script>
+    <!-- uni 的 SDK -->
+    <script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+</body>
+
+</html>

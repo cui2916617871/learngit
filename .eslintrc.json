@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "react-app",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "prettier"
+    ],
+    "plugins": ["react", "prettier"],
+    "rules": {
+        "prettier/prettier": [
+            "warn", {
+                "semi": false,
+                "tabWidth": 4,
+                "printWidth": 120,
+                "trailingComma": "all",
+                "singleQuote": true,
+                "jsxSingleQuote": true
+            }
+        ],
+        "eqeqeq": 2,
+        "no-debugger": "warn",
+        "react/display-name": 0,
+        "react/no-string-refs": "warn",
+        "react-hooks/exhaustive-deps": 0
+    },
+    "globals": {
+        "wx": true,
+        "my": true,
+        "uni": true
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "presets": [
+        "react-app",
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "esmodules": true,
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        "transform-function-bind",
+        "@babel/plugin-transform-runtime",
+        ["import",
+            {
+                "libraryName": "antd-mobile",
+                "style": "css"
+            }
+        ], // `style: true` 会加载 less 文件
+        ["@babel/plugin-proposal-decorators", {
+            "legacy": true
+        }]
+    ]
+}

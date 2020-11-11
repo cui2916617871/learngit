@@ -1,0 +1,45 @@
+/* 设置input框placeholder颜色 */
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+input:-ms-input-placeholder {
+    color: #CCCCCC;
+}
+
+input::-moz-placeholder {
+    color: #CCCCCC;
+}
+
+.inputer {
+    display: inline-block;
+    height: 100%;
+}
+
+.inputer input {
+    width: calc(100% - .4rem);
+    height: 100%;
+    font-size: .28rem;
+    color: #222;
+    background: transparent;
+    line-height: 100%;
+}
+
+/*.inputer input:valid+.clearSection {*/
+    /*visibility: visible;*/
+/*}*/
+
+.clearSection {
+    visibility: hidden;
+    display: flex;
+    width: .4rem;
+    height: 100%;
+    float: right;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.isFocus {
+    visibility: visible;
+}

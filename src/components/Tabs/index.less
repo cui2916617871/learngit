@@ -1,0 +1,92 @@
+@import "../../style/index.less";
+
+.component-tabs {
+    background-color: #fff;
+
+    .tabs-box-default {
+        &:extend(.ls-flex);
+
+
+        .tab-pane {
+            &:extend(.ls-flex1);
+            &:extend(.ls-flex);
+            &:extend(.ls-justify-center);
+            color: #666;
+            font-size: 0.15rem;
+
+            .text {
+                padding: 0.105rem 0;
+            }
+        }
+
+        .selected .text {
+            color: #000;
+            font-weight: bold;
+        }
+    }
+
+    .tabs-box-card {
+        &:extend(.ls-flex);
+        &:extend(.ls-flex1);
+        &:extend(.ls-row);
+        &:extend(.ls-align-end);
+
+        .search-tab {
+            &:extend(.ls-flex1);
+
+            height: 0.4rem;
+            line-height: 0.4rem;
+            text-align: center;
+            background-color: rgba(34, 34, 34, 0.70);
+            color: #fff;
+
+            font-size: 0.16rem;
+        }
+
+        .inside {
+            border-top-left-radius: 0.05rem;
+
+            .inside-index {
+                display: none;
+            }
+        }
+
+        .outside {
+            border-top-right-radius: 0.05rem;
+
+            .outside-index {
+                display: none;
+            }
+        }
+
+        .index {
+            background-color: #ffffff;
+            height: 0.46rem;
+            line-height: 0.46rem;
+            color: #333;
+            position: relative;
+
+            .inside-index {
+                display: block;
+                position: absolute;
+                right: -0.12rem;
+                height: 0.46rem;
+                top: 0.01rem;
+                width: 0.14rem;
+                height: 0.46rem;
+            }
+
+            .outside-index {
+                .inside-index();
+                transform: scaleX(-1);
+                right: unset;
+                left: -0.12rem;
+            }
+        }
+    }
+
+    .tabs-gradient {
+        height: 0.08rem;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}

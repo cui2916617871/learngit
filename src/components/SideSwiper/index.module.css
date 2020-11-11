@@ -1,0 +1,14 @@
+.sideSwiper {
+    overflow: hidden;
+}
+
+.sideSwiperContainer {
+    display: flex;
+    transition: transform 200ms linear;
+}
+
+.test {
+    background-color: red;
+}
+
+.swiperTransition {}

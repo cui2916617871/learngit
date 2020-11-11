@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "./reset.less";
+
+.over-hide {
+    overflow: hidden;
+}
+
+// &:extend(.ls-flex);
+.fx,
+.ls-flex {
+    display: flex;
+}
+
+// &:extend(.ls-flex-wrap);
+.ls-flex-wrap {
+    -webkit-box-lines: multiple;
+    flex-wrap: wrap;
+}
+
+// &:extend(.ls-flex1);
+.fx1,
+.ls-flex1 {
+    flex: 1;
+}
+
+// &:extend(.ls-row);
+.fx-row,
+.ls-row {
+    flex-direction: row;
+    box-orient: horizontal;
+}
+
+// &:extend(.ls-column);
+.fx-col,
+.ls-column {
+    flex-direction: column;
+    box-orient: vertical;
+}
+
+// &:extend(.ls-justify-center);
+.fx-h-ct,
+.ls-justify-center {
+    justify-content: center;
+    box-pack: center;
+}
+
+// &:extend(.ls-justify-start);
+.fx-h-st,
+.ls-justify-start {
+    justify-content: flex-start;
+    box-pack: start;
+}
+
+// &:extend(.ls-justify-end);
+.fx-h-ed,
+.ls-justify-end {
+    justify-content: flex-end;
+    box-pack: end;
+}
+
+// &:extend(.ls-justify-space-between);
+.fx-h-btw,
+.ls-justify-space-between {
+    justify-content: space-between;
+    box-pack: justify;
+}
+
+// &:extend(.ls-justify-space-around);
+.fx-h-ard,
+.ls-justify-space-around {
+    justify-content: space-around;
+    box-pack: justify;
+}
+
+// &:extend(.ls-align-center);
+.fx-h-ct,
+.ls-align-center {
+    align-items: center;
+    box-align: center;
+}
+
+// &:extend(.ls-align-start);
+.fx-v-st,
+.ls-align-start {
+    align-items: flex-start;
+    box-align: start;
+}
+
+// &:extend(.ls-align-end);
+.fx-v-ed,
+.ls-align-end {
+    align-items: flex-end;
+    box-align: end;
+}
+
+// &:extend(.ls-flex-grow);
+.ls-flex-grow {
+    flex-grow: 1;
+}
+
+.text-lt {
+    text-align: left;
+}
+
+.text-ct {
+    text-align: center;
+}
+
+.text-rt {
+    text-align: right;
+}
+
+.full {
+    width: 100%;
+}

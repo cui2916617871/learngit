@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src/",
+        "paths": {
+            "@src/*": [
+                "./*"
+            ],
+            "@api/*": [
+                "./api/*"
+            ],
+            "@base/*": [
+                "./base/*"
+            ],
+            "@pages/*": [
+                "./pages/*"
+            ],
+            "@utils/*": [
+                "./utils/*"
+            ],
+            "@vendor/*": [
+                "./vendor/*"
+            ],
+            "@assets/*": [
+                "./assets/*"
+            ],
+            "@components/*": [
+                "./components/*"
+            ]
+        },
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "plugins": [{
+                "name": "typescript-styled-plugin",
+                "tags": [
+                    "styled",
+                    "css",
+                    "sty"
+                ]
+            }]
+    },
+    "exclude": [
+        "build",
+        "node_modules"
+    ]
+}
