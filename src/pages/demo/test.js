@@ -6,6 +6,7 @@ import React from 'react'
 import BasePage from '@base/BasePage'
 import { Loading } from '@src/components'
 
+
 class Test extends BasePage {
     constructor(props) {
         super(props)
