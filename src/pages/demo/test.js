@@ -14,7 +14,7 @@ class Test extends BasePage {
         this.state = {
             isLoading: false,
             isShowCity: false,
-            title: '常居城市',
+            title:  "常居城市",
             options: [],
             index: 0,
             level: 1,
