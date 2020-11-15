@@ -1,0 +1,103 @@
+.topTicket {
+  background: #fff;
+  width: 100%;
+  border-radius: 0.16rem;
+  position: relative;
+  .firstLine {
+    width: 100%;
+    padding: 0 0.2rem;
+    height: 0.8rem;
+    border-bottom: 2px dashed #f5f5f5;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+  }
+  .ball {
+    b {
+      position: absolute;
+      display: inline-flex;
+      width: 0.3rem;
+      height: 0.3rem;
+      background: #f5f5f5;
+      border-radius: 50%;
+      &:first-child {
+        left: 0;
+        top: 0.65rem;
+        left: -0.15rem;
+      }
+      &:last-child {
+        right: 0;
+        top: 0.65rem;
+        right: -0.15rem;
+      }
+    }
+  }
+  .topDiscount {
+    display: flex;
+    padding: 0.2rem 0.4rem 0.2rem .6rem;
+    p {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &:first-child {
+        width: 20%;
+        color: #ff5040;
+        span {
+          &:first-child {
+            b {
+              &:first-child {
+                font-size: 0.6rem;
+                line-height: 1.1;
+              }
+            }
+          }
+          &:last-child {
+            font-size: 0.2rem;
+          }
+        }
+      }
+      &.active {
+        color: #cccccc;
+      }
+      &:last-child {
+        width: 80%;
+        overflow: hidden;
+        color: #222;
+        span {
+          &:first-child {
+            font-size: 0.14rem;
+            transform: scale(0.9);
+            background: #ffce00;
+            border-radius: 0.2rem;
+            padding: 0.02rem 0.2rem;
+            display: none;
+          }
+          &.isActive {
+            background-color: #ccc;
+            color: #fff;
+          }
+          &:nth-child(2) {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-top: 0.04rem;
+            margin-bottom: 0.04rem;
+          }
+          &:last-child {
+            color: #999;
+            font-size: 0.24rem;
+          }
+        }
+      }
+    }
+  }
+}
+.sectionTitleIcon {
+  width: .8rem;
+  height: .8rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
